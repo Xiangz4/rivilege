@@ -1,0 +1,17 @@
+package com.xyf.quanxian_stu.core_interface;
+
+public interface IprivillegeContext {
+
+    /**
+     * 拥有的权限
+     * @return
+     */
+    IprivillegeOwn Own();
+
+    /**
+     * 需要的权限
+     * @return
+     */
+    IprivillegeAquier require();
+
+}
