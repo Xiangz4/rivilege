@@ -6,12 +6,12 @@ public interface IprivillegeContext {
      * 拥有的权限
      * @return
      */
-    IprivillegeOwn Own();
+    IprivillegeOwn Own(IprivillegeOwn iprivillegeOwn);
 
     /**
      * 需要的权限
      * @return
      */
-    IprivillegeAquier require();
+    IprivillegeAquier require(IprivillegeAquier iprivillegeAquier);
 
 }

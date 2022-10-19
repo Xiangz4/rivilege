@@ -16,6 +16,7 @@
     <properties>
         <java.version>1.8</java.version>
         <privilege-core>0.0.8</privilege-core>
+        <transmittable-thread-local>2.14.0</transmittable-thread-local>
     </properties>
 
     <dependencies>
@@ -46,6 +47,14 @@
             <artifactId>privilege-mvc</artifactId>
             <version>${privilege-core}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/transmittable-thread-local -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+            <version>${transmittable-thread-local}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
