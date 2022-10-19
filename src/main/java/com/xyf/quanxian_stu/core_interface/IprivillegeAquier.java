@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface IprivillegeAquier {
 
-    List<IprivillegeInfo> aqrivillege();
+    List<IprivillegeInfo> aqrivillege(Integer ...integers);
 }

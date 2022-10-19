@@ -6,9 +6,14 @@ import com.xyf.quanxian_stu.core_interface.IprivillegeOwn;
 
 public class App {
 
-    public static void main(String[] args) {
-        SecurityContext.init();
-
+    public void test(){
+        System.out.println(Thread.currentThread().getStackTrace()[2].getMethodName());
     }
+    public static void main(String[] args) {
+        App app = new App();
+        app.test();
+    }
+
+
 
 }

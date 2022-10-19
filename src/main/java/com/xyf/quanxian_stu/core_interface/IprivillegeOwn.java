@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface IprivillegeOwn {
 
-    List<IprivillegeInfo> ownrivillege();
+    List<IprivillegeInfo> ownrivillege(Integer ...integers);
 }

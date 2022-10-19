@@ -23,7 +23,7 @@ public class SecurityContext{
     //权限定义以及添加
     static {
         IprivillegeInfo info = IprivillegeInfo.newInstance();
-        ArrayList<IprivillegeInfo> list = new ArrayList<>();
+        List<IprivillegeInfo> list = new ArrayList<>();
         info.Code(1001);
         list.add(info);
         API_REQUIRE.put("teserivillege",list);
@@ -45,6 +45,10 @@ public class SecurityContext{
     }
     public static Map<String,String> getThread2Contextid(){
         return THREAD_2_CONTEXTID;
+    }
+
+    public static Map<String, List<IprivillegeInfo>> getApiRequire() {
+        return API_REQUIRE;
     }
 
     public static Map<String,SecurityContextBean> getContextPool(){
